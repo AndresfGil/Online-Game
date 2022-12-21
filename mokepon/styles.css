@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Girassol&family=Underdog&display=swap');
+
+body {
+    font-family: 'Russo One', sans-serif;
+    background-image: url(./assets/Fondo.png);
+    background-size: cover;
+    }
+
+#escoge-tu-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Girassol', cursive;
+}
+
+.subtitulo {
+    color: whitesmoke;
+    font-family: 'Underdog', cursive;
+    font-size: 30px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px
+}
+
+.tarjeta-de-mokepon {
+    width: 150px;
+    height: 120px;
+    background: rgb(173, 221, 208);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:20px;
+    display: flex;
+    color: rgb(253, 255, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 200px;
+    height: 70px;
+    background: transparent;
+    border-radius:20px;
+    border: 2px solid white;
+    font-family: 'Underdog', cursive;
+    margin-top: 30px;
+    color: white
+}
+
+input {
+    display: none;
+}
+
+ input:checked + label {
+    background-color:rgb(95, 157, 247);
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: rgb(173, 221, 208);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:20px;
+    border-color: transparent;
+    width: 100px;
+    font-family: 'Underdog', cursive;
+    color: white;
+}
+
+#mensajes {
+    width: 350px;
+    background: rgb(179, 255, 174);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    font-family: 'Underdog', cursive;
+    justify-content: center;
+}
+
+#boton-reiniciar {
+    width: 100px;
+    background:black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Underdog', cursive;
+    color: whitesmoke;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques-enemigo, .ataques-jugador {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgb(179, 255, 174);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: 'DynaPuff', cursive;
+    color:aliceblue
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 50px;
+    background: transparent;
+    border-radius:20px;
+    border: 2px solid white;
+    font-family: 'Underdog', cursive;
+    margin: 10px, 1px;
+    color: white
+}
+
+
+/* codigo por fuera esta en dispositivos grandes, y dentro de media lo que esta desde 0px hasta 360px */
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 300px) {
+        #ver-mapa div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+}
